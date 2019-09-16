@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tesla-weld</title>
 
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./css/main.css">
 </head>
@@ -130,7 +132,61 @@
                             <div class="offers-time">
                                 <p>Предложение действует только до конца месяца</p>
                                 <div class="countdown">
-                                    <script src="//megatimer.ru/get/669c59ca87f1fc63f1648365abd33b77.js"></script>
+                                    <!-- <script  src="//megatimer.ru/get/669c59ca87f1fc63f1648365abd33b77.js"></script> -->
+                                    <script type='text/javascript'>
+                                        (function(){
+                                            var _id="669c59ca87f1fc63f1648365abd33b77";
+                                            while(document.getElementById("timer"+_id))_id=_id+"0";
+                                            document.write("<div id='timer"+_id+"' style='min-width:278px;height:64px;'></div>");
+                                            var _t=document.createElement("script");
+                                            _t.src="http://megatimer.ru/timer/timer.min.js";
+                                            var _f=function(_k){
+                                                var l=new MegaTimer(_id, {
+                                                    "view":[1,1,1,1],
+                                                    "type": {
+                                                        "currentType":"1",
+                                                        "params": {
+                                                            "usertime":true,
+                                                            "tz":"3",
+                                                            "utc":1569801600000
+                                                        }
+                                                    },
+                                                    "design": {
+                                                        "type":"text",
+                                                        "params": {
+                                                            "number-font-family": {
+                                                                "family":"Russo One",
+                                                                "link":"<link href='http://fonts.googleapis.com/css?family=Russo+One&subset=latin,cyrillic' rel='stylesheet' type='text/css'>"
+                                                            },
+                                                            "number-font-size":"48",
+                                                            "number-font-color":"#ffffff",
+                                                            "separator-margin":"6",
+                                                            "separator-on":true,
+                                                            "separator-text":":",
+                                                            "text-on":true,
+                                                            "text-font-family": {
+                                                                "family":"Russo One",
+                                                                "link":"<link href='http://fonts.googleapis.com/css?family=Russo+One&subset=latin,cyrillic' rel='stylesheet' type='text/css'>"
+                                                            },
+                                                            "text-font-size":"16",
+                                                            "text-font-color":"#ffffff"
+                                                        }
+                                                    },
+                                                    "designId":1,
+                                                    "theme":"black",
+                                                    "width":278,
+                                                    "height":64
+                                                });
+                                                if(_k!=null)l.run();
+                                            };
+                                            _t.onload=_f;
+                                            _t.onreadystatechange=function(){
+                                                if(_t.readyState=="loaded")_f(1);
+                                            };
+                                            var _h=document.head||document.getElementsByTagName("head")[0];
+                                            _h.appendChild(_t);
+                                        }).call(this);
+                                        </script>
                                 </div>
                             </div>
                             <button class="button button-primary">Уточнить детали у менеджера</button>
@@ -374,8 +430,9 @@
     </div>
     <!-- end wrapper -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <script src="./js/common.js"></script>
 </body>
