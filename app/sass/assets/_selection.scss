@@ -1,0 +1,121 @@
+.selection {
+  background: url('../img/selection-bg.jpg') center / cover no-repeat;
+}
+.selection-box {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $yellow;
+  border-radius: 2px;
+  overflow: hidden;
+  width: 430px;
+  height: 450px;
+  margin: 0 auto;
+  background-color: $white;
+  .selection-header {
+    height: 50px;
+    background-image: linear-gradient(0deg, rgb(254,199,0) 0%, rgb(254,211,0) 36%, rgb(254,223,0) 100%);
+    h2 {
+      font-size: 24px;
+      font-weight: $boldFont;
+      line-height: 50px;
+      text-transform: none;
+      span {
+        font-weight: $mediumFont;
+      }
+    }
+  }
+  .selection-main {
+    padding: 35px 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+  .selection-body {
+    text-align: left;
+    .check {
+      cursor: pointer;
+      position: relative;
+      padding: 5px 10px 5px 40px;
+      margin-top: 0;
+      margin-bottom: 10px;
+      width: 100%;
+      border-radius: 3px;
+      background-color: $formCheckColorBg;
+      font-size: 18px;
+      font-weight: $lightFont;
+      transition: background-color .3s;
+      &:hover {
+        background-color: $gray;
+      }
+      .check-input {
+        @include visually-hidden;
+      }
+      .check-box {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-60%);
+        width: 18px;
+        height: 18px;
+        border: 1px solid $gray;
+        border-radius: 3px;
+        background-color: $white;
+      }
+      .check-input:checked + .check-box {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpolyline fill='none' stroke='%23000' stroke-width='2' points='1.079 4.999 5 9 10.837 2'/%3E%3C/svg%3E");
+      }
+      .check-input:focus + .check-box {
+        @include outline;
+      }
+      .check-input:disabled + .check-box {
+        opacity: .5;
+      }
+      .check-input:checked:disabled + .check-box {
+        opacity: .5;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpolyline fill='none' stroke='%23000' stroke-width='2' points='1.079 4.999 5 9 10.837 2'/%3E%3C/svg%3E");
+      }
+    }
+  }
+  .selection-action {
+    width: 320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .selection-loader {
+    width: 150px;
+    padding: 40px 10px 10px;
+    margin: 0 auto;
+    p {
+      padding-top: 35px;
+      font-size: 18px;
+      font-weight: $lightFont;
+    }
+  }
+}
+
+.form-data {
+  p {
+    font-size: 18px;
+    font-weight: $lightFont;
+    padding-left: 10px;
+    margin-bottom: 22px;
+  }
+  .form-view {
+    width: 320px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    label {
+      font-size: 15px;
+      font-weight: $lightFont;
+      margin-bottom: 0;
+    }
+    input {
+      height: 38px;
+      border: 1px solid $liteBlack;
+      border-radius: 2px;
+      font-size: 16px;
+    }
+  }
+}

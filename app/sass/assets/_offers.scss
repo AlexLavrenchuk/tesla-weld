@@ -1,0 +1,38 @@
+.offers {
+  padding: 20px 0;
+}
+.offers-text {
+  padding-bottom: 10px;
+  h1 {
+    font-size: 50px;
+    font-weight: $boldFont;
+    letter-spacing: -2px;
+    line-height: 60px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  h3 {
+    font-size: 30px;
+    font-weight: $lightFont;
+    margin-bottom: 20px;
+  }
+  p {
+    font-weight: $thinFont;
+    margin-bottom: 15px;
+  }
+}
+.offers-time {
+  color: $yellow;
+  font-weight: $mediumFont;
+  margin-bottom: 60px;
+  p {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  .countdown {
+    display: inline-block;
+  }
+}
+.img-device {
+  padding-top: 40px;
+}

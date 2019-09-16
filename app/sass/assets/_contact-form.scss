@@ -1,0 +1,36 @@
+.contact-form {
+  margin-bottom: 60px;
+  .form {
+    text-align: center;
+    padding: 20px 10px;
+    background-image: url('../img/contact-form-bg.jpg');
+  }
+  .form-title {
+    font-size: 18px;
+    font-weight: $mediumFont;
+    margin-bottom: 5px;
+
+  }
+  .form-subtitle {
+    font-size: 18px;
+    font-weight: $thinFont;
+    margin-bottom: 20px;
+  }
+  .form-view {
+    width: 300px;
+    margin: 0 15px;
+    input {
+      width: 100%;
+      padding-left: 20px;
+      font-size: 16px;
+      border: 1px solid #999999;
+      border-radius: 2px;
+      height: 38px;
+      &::placeholder {
+        font-size: 16px;
+        font-weight: $lightFont;
+        color: $black;
+      }
+    }
+  }
+}

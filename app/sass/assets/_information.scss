@@ -1,0 +1,24 @@
+.information {
+  font-size: 18px;
+  font-weight: $boldFont;
+  .section-title {
+    margin-bottom: 25px;
+  }
+}
+.description {
+  text-align: left;
+  h5 {
+    font-size: inherit;
+    font-weight: inherit;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  p {
+    font-weight: $thinFont;
+    margin-left: -20px;
+    margin-bottom: 20px;
+  }
+  .special {
+    font-weight: $mediumFont;
+  }
+}
